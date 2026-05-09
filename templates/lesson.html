@@ -264,7 +264,12 @@
                             <a href="{{ public_repo_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                                 View Repository
                             </a>
-                        </div>
+                            {% if chemcompute_launch %}
+                            <a href="{{ chemcompute_launch }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                                Launch on ChemCompute
+                            </a>
+                            {% endif %}
+                        </div> 
                     </div>
                     
                     <h3 style="margin-top: 32px;">Instructor Materials</h3>
@@ -277,7 +282,7 @@
                             </a>
                             <p class="access-note">
                                 Requires instructor verification. 
-                                <a href="mailto:{{ instructor_email }}?subject=Instructor Access Request&body=Please include:%0A- Your name and institution%0A- Your GitHub username%0A- Courses you teach%0A%0APlease send from your academic email address.">Request access</a> 
+                                <a href="mailto:act-cms@molssi.org?subject=Instructor Access Request&body=Please include:%0A- Your name and institution%0A- Your GitHub username%0A- Courses you teach%0A%0APlease send from your academic email address.">Request access</a> 
                                 if you don't have permission.
                             </p>
                         </div>
